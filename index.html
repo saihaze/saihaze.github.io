@@ -1,14 +1,42 @@
-<html>
+<html style="background-color: rgb(228, 228, 228);">
 
 <head>
     <meta charset="utf-8">
     <title>CIFIC 程序設計語言</title>
 </head>
 
-<body>
-    <h1 style="text-align: center;">CIFIC 程序設計語言</h1>
-    <h2>設計原則</h2>
-    <p>　　CIFIC 程序設計語言是一個靜態強類型、多範式的編程語言。</p>
+<body style="background-color: white; margin-top: 0%; margin-bottom: 0%;
+            max-width: 100em; margin-left: auto; margin-right: auto;
+            box-shadow: 0 0 5px 5px rgb(187, 187, 187);">
+    <div style="margin-left: 1%; margin-right: 1%">
+        <div style="border-top: 3px solid rgb(163, 45, 42);"></div>
+        <h1 style="text-align: center;">CIFIC 程序設計語言</h1>
+        <div style="background-color: rgb(163, 45, 42);">
+            <h2 style="color: white;">凡例</h2>
+        </div>
+        <p style="font-size: 20;">
+            　　雖然這篇設計文檔由繁體字寫就，但所有術語皆按照大陸習慣。
+        </p>
+        <div style="background-color: rgb(163, 45, 42);">
+            <h2 style="color: white;">設計原則</h2>
+        </div>
+        <p style="font-size: 20;">
+            　　CIFIC 程序設計語言是一個靜態強類型、多範式的編程語言。
+            程序庫是程序員智慧的結晶，理應被最大化地利用。但是目前而言，
+            跨編程語言的復用還是比較困難的事情，尤其是本地語言和虛擬機
+            語言之間。CIFIC 的目標之一，就是讓跨語言的調用變得簡單。
+            如此一來，就可以充分利用各個現有語言龐大的生態，同時爲它們
+            貢獻生態。
+        </p>
+        <p style="font-size: 20;">
+            　　我們首先考慮的是開發效率。一些語言，如 C++ 和 Rust，
+            採用 RAII 或強大的生命期機制來保證資源安全；這屬於零開銷
+            抽象。在 CIFIC 語言之中，零開銷抽象的設計應該盡可能多，
+            但在內存管理方面，我們會準備一個可選的垃圾回收器來降低心智
+            負擔、提升開發效率。我們會將許多有用的功能，如動態數組和
+            Unicode 字符串作爲核心語言特性。
+        </p>
+    </div>
 </body>
 
 </html>
